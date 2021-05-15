@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" >
+    
+<head>
+        <meta charset="utf-8" />
+        <title>Member Login | Ekmev Secretary</title>
+        
+        <meta name="description" content="Latest updates and statistic charts">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <script src="../../ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+        <script>
+            WebFont.load({
+            google: {"families":["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]},
+                active: function() {
+                    sessionStorage.fonts = true;
+                }
+            });
+        </script>
+        
+        <link href="../admin/metro/css/vendors.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="../admin/metro/css/style.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="../admin/metro/css/custom.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="../frontend/theme/img/ico/favicon.html" />
+                
+    </head>
+    
+    <body style="background-color:rgb(230, 57, 45)" class="m--skin- m-page--loading-enabled m-page--loading m-content--skin-light m-header--fixed m-header--fixed-mobile m-aside-left--offcanvas-default m-aside-left--enabled m-aside-left--fixed m-aside-left--skin-dark m-aside--offcanvas-default"  >
+        
+        <div class="m-page-loader m-page-loader--base">
+            <div class="m-blockui">
+                <span>Please wait...</span>
+                <span>
+                    <div class="m-loader m-loader--brand"></div>
+                </span>
+            </div>
+        </div>
+        
+        <div class="m-grid m-grid--hor m-grid--root m-page">
+            
+            <button class="m-aside-left-close  m-aside-left-close--skin-dark " id="m_aside_left_close_btn">
+                <i class="la la-close"></i>
+            </button>
+            <div id="m_aside_left" class="m-aside-left  m-aside-left--skin-dark ">
+                            </div>
+
+            <!-- begin::Body -->
+                <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-container m-container--responsive m-container--xxl m-container--full-height">
+                    
+<div class="m-grid m-grid--hor m-grid--root m-page">
+    <div class="m-login m-login--signin  m-login--5" id="m_login" style="background-image: url(../images/common/login-bg.jpg);">
+        <div class="m-login__wrapper-2 m-portlet-full-height">
+            <div class="m-login__contanier">
+                <div class="m-login__signin">
+                    <div class="m-login__head">
+                        <h3 class="m-login__title">
+                            Login To Your Account
+                        </h3>
+                    </div>
+
+                    <form class="m-login__form m-form" method="POST" action="../signin.html" autocomplete="off">
+                        <input type="hidden" name="_token" value="842q2yWGq0bi1tOyPj9uxyKcD3k6zEVEpgw1hdyb">
+                   
+                        
+                        
+                                                
+                        <div class="form-group m-form__group ">
+                            <input class="form-control m-input" type="text" placeholder="Mobile" name="mobile" autocomplete="off" value="" required>
+                                                    </div>
+                        
+                        <div class="form-group m-form__group ">
+                            <input class="form-control m-input" type="Password" placeholder="Password" name="password" required>
+                                                    </div>
+
+                        <div class="row m-login__form-sub">
+                            <div class="col m--align-left">
+                            </div>
+                            <div class="col m--align-right">
+                                <a href="javascript:;" id="m_login_forget_password" class="m-link">
+                                    Forget Password ?
+                                </a>
+                                <a href="../index.html" id="m_login_forget_password" class="m-link">
+                                    Back to Home
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="m-login__form-action">
+                            <button type="submit" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air">
+                                Sign In
+                            </button>
+                        </div>
+                    </form>
+                </div>
+               
+                <div class="m-login__forget-password">
+                    <div class="m-login__head">
+                        <h3 class="m-login__title">
+                            Forgotten Password ?
+                        </h3>
+                        <div class="m-login__desc">
+                            Enter your mobile no to reset your password:
+                        </div>
+                    </div>
+                    <form class="m-login__form m-form" method="post" action="https://ekmevsecretary.com/member/forgotPassword">
+                        <input type="hidden" name="_token" value="842q2yWGq0bi1tOyPj9uxyKcD3k6zEVEpgw1hdyb">
+                        <div class="form-group m-form__group">
+                            <input class="form-control m-input" type="text" placeholder="Mobile No" name="mobile" id="m_mobile" autocomplete="off">
+                        </div>
+                        <div class="m-login__form-action">
+                            <button type="submit" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air">
+                                Request
+                            </button>
+                            <button id="m_login_forget_password_cancel" class="btn btn-outline-focus m-btn m-btn--pill m-btn--custom ">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            
+            
+        </div>
+
+        
+        <!-- begin::Scroll Top -->
+        <div id="m_scroll_top" class="m-scroll-top">
+            <i class="la la-arrow-up"></i>
+        </div>
+
+        <!-- begin::Quick Nav -->
+        
+        <script src="../admin/metro/js/vendors.bundle.js" type="text/javascript"></script>
+        <script src="../admin/metro/js/scripts.bundle.js" type="text/javascript"></script>
+        <script src="../admin/layout/scripts/custom.js" type="text/javascript"></script>
+        <script>
+            $(window).on('load', function() {
+                $('body').removeClass('m-page--loading');
+            });
+        </script>
+        
+        <script src="../admin/metro/js/login.js" type="text/javascript"></script>
+    </body>
+
+<!-- Mirrored from ekmevsecretary.com/member/login by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 May 2020 12:07:16 GMT -->
+</html>
